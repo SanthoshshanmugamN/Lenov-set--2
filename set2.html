@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reverse an Array</title>
+    <link rel="stylesheet" href="set2.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Reverse an Array</h1>
+        <label for="arrayInput">Enter an array of numbers (comma-separated):</label>
+        <input type="text" id="arrayInput" placeholder="e.g., 1, 2, 3, 4, 5">
+        <button onclick="reverseArray()">Reverse Array</button>
+
+        <p id="output"></p>
+    </div>
+
+    
+    <!--remove dulicates-->
+    <div class="container">
+        <h1>Remove duplicates</h1>
+        <label for="arrayInput2">Enter a sorted array of numbers (comma-separated):</label>
+        <input type="text" id="arrayInput2" placeholder="e.g., 1, 1, 2, 2, 3, 4, 4">
+        <button onclick="removeDuplicatesFromArray()">Remove Duplicates</button>
+        <p id="output2"></p>
+    </div>
+
+    <!--sign in-->
+    <div class="container" id="signupContainer">
+        <h2>Signup</h2>
+        <label for="username">Name:</label>
+        <input type="text" id="name" placeho`lder="Name">
+        <br>
+        <label for="username">Email:</label>
+        <input type="text" id="username" placeholder="Enter Email">
+        <br>
+        <label for="password">password :</label>
+        <input type="text" id="password" placeholder="Enter Password">        
+        <br>
+        <label for="operator">Choose an operator:</label>
+        <select id="operator">
+            <option value="add">Addition</option>
+            <option value="sub">Subtraction</option>
+            <option value="mul">Multiplication</option>
+        </select>
+
+        <button onclick="signup()">Submit</button>
+    </div>
+
+    <div class="container" id="calcContainer" style="display: none;">
+        <h2>Calculator</h2>
+        <label for="num1">Input 1:</label>
+        <input type="number" id="num1">
+
+        <label for="num2">Input 2:</label>
+        <input type="number" id="num2">
+
+        <button onclick="calculate()">Calculate</button>
+        <p id="result"></p>
+    </div>
+
+   
+
+
+   
+
+    <script src="set2.js"></script>
+</body>
+</html>
